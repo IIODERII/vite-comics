@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper text-white">
     <div class="container d-flex justify-content-between align-items-center">
-      <div class="row g-2 w-50">
+      <div class="row g-2 w-50 py-5">
         <div class="col-4">
           <h3 class="text-uppercase fw-bold">dc comics</h3>
           <ul class="list-unstyled">
@@ -85,7 +85,7 @@ export default {
   background-image: url("../../assets/image/footer-bg.jpg");
   background-size: cover;
   overflow: hidden;
-  height: 580px;
+  //height: 580px;
 
   h3 {
     font-size: 1.3em;
@@ -103,9 +103,13 @@ export default {
 
   .image {
     width: 50%;
+    height: 500px;
+    position: relative;
     img {
       width: 100%;
-      transform: translateY(-5%);
+      position: absolute;
+      top: -10%;
+      left: 0;
     }
   }
 }
