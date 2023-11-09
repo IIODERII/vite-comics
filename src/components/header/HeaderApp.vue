@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-white py-3">
+  <header class="bg-white">
     <div class="container d-flex justify-content-between align-items-center">
       <div>
         <img src="../../assets/image/dc-logo.png" alt="Small Logo" />

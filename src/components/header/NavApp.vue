@@ -2,7 +2,7 @@
   <ul class="nav nav-underline text-uppercase">
     <li class="nav-item px-1" v-for="(item, index) in navItems">
       <a
-        class="nav-link py-5 text-black fw-bold"
+        class="nav-link text-black fw-bold"
         :class="{ active: item.active }"
         aria-current="page"
         :href="item.url"
@@ -90,5 +90,7 @@ export default {
 
 a {
   font-size: 0.9em;
+  padding: 50px 0;
+  border-width: 5px !important;
 }
 </style>
