@@ -87,4 +87,8 @@ export default {
 .active {
   color: #0c7cec !important;
 }
+
+a {
+  font-size: 0.9em;
+}
 </style>
