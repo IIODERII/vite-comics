@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import NavApp from "./navapp.vue";
+import NavApp from "./NavApp.vue";
 export default {
   name: "HeaderApp",
   components: {
