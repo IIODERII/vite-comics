@@ -16,9 +16,6 @@ export default {
     MainApp,
     FooterApp,
   },
-  mounted() {
-    console.log(comics);
-  },
 };
 </script>
 

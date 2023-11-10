@@ -26,6 +26,9 @@ export default {
 .jumbo {
   height: 500px;
   background-image: url("../../assets/image/jumbotron.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   button {
     position: absolute;
