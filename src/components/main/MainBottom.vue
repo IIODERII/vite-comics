@@ -2,11 +2,11 @@
   <div class="bg-primary">
     <div class="container">
       <ul
-        class="d-flex list-unstyled justify-content-between text-uppercase text-white"
+        class="row list-unstyled justify-content-xxl-between justify-content-center text-uppercase text-white"
       >
         <li
           v-for="item in buyList"
-          class="d-flex align-items-center justify-content-between py-5"
+          class="d-flex align-items-center justify-content-md-between justify-content-center py-5 col-xxl-2 col-xl-3 col-lg-4 col-md-6 col-12"
         >
           <div>
             <img :src="item.image" :alt="item.text" class="h-100" />

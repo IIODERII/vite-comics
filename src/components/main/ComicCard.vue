@@ -22,21 +22,39 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.c-img {
-  height: 300px;
-  width: 300px;
-  img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: center top;
+.text-white {
+  > div {
+    margin: 0 auto;
+    max-width: 300px;
+  }
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+
+    > div {
+      color: #0d6efd;
+      transition: all 0.2s ease;
+    }
+  }
+  .c-img {
+    height: 300px;
+    width: 300px;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center top;
+    }
   }
 }
 
 @media screen and (max-width: 768px) {
-  .c-img {
-    width: 100%;
-    height: 85vw;
+  .text-white {
+    .c-img {
+      width: 100%;
+      height: 85vw;
+    }
   }
 }
 </style>

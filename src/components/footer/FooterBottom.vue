@@ -11,10 +11,12 @@
         </button>
       </div>
 
-      <div class="d-flex">
-        <h3 class="text-primary text-uppercase px-3 fw-bold">follow us</h3>
-        <ul class="d-flex list-unstyled">
-          <li v-for="item in links" class="px-2">
+      <div class="d-flex flex-wrap justify-content-end">
+        <h3 class="text-primary text-uppercase px-3 fw-bold py-2 text-end">
+          follow us
+        </h3>
+        <ul class="d-flex flex-wrap justify-content-center list-unstyled">
+          <li v-for="item in links" class="p-2">
             <img :src="item" :alt="item" />
           </li>
         </ul>
@@ -48,6 +50,12 @@ export default {
     cursor: pointer;
     filter: invert(1);
     transition: all 0.3s ease-in-out;
+  }
+
+  @media screen and (max-width: 576px) {
+    h3 {
+      width: 100%;
+    }
   }
 }
 </style>

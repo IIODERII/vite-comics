@@ -1,8 +1,8 @@
 <template>
   <div class="wrapper text-white">
-    <div class="container d-flex justify-content-between align-items-center">
-      <div class="row g-2 w-50 py-5">
-        <div class="col-4">
+    <div class="container">
+      <div class="row w-100 py-5">
+        <div class="col-sm-4 col-6">
           <h3 class="text-uppercase fw-bold">dc comics</h3>
           <ul class="list-unstyled">
             <li v-for="item in dcComics">
@@ -18,7 +18,7 @@
           </ul>
         </div>
 
-        <div class="col-4">
+        <div class="col-sm-4 col-6">
           <h3 class="text-uppercase fw-bold">dc</h3>
           <ul class="list-unstyled">
             <li v-for="item in DC">
@@ -27,7 +27,7 @@
           </ul>
         </div>
 
-        <div class="col-4">
+        <div class="col-sm-4 col-12">
           <h3 class="text-uppercase fw-bold">sites</h3>
           <ul class="list-unstyled">
             <li v-for="item in sites">
@@ -35,9 +35,6 @@
             </li>
           </ul>
         </div>
-      </div>
-      <div class="image">
-        <img src="../../assets/image/dc-logo-bg.png" alt="" />
       </div>
     </div>
   </div>
@@ -101,15 +98,16 @@ export default {
     }
   }
 
-  .image {
-    width: 50%;
-    height: 500px;
-    position: relative;
-    img {
-      width: 100%;
-      position: absolute;
-      top: -10%;
-      left: 0;
+  .container {
+    background-image: url("../../assets/image/dc-logo-bg.png");
+    background-repeat: no-repeat;
+
+    background-position: center right;
+  }
+
+  @media screen and (min-width: 768px) {
+    .row {
+      width: 50% !important;
     }
   }
 }

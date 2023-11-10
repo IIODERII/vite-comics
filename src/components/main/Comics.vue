@@ -1,5 +1,5 @@
 <template>
-  <div class="row align-items-start">
+  <div class="row align-items-start justify-content-center">
     <ComicCard
       v-for="comic in comics"
       :image="comic.thumb"
